@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>웹 방탈출 호실 목록</title>
+<meta name="description" content="링크 하나로 들어가는 웹 방탈출. 호실마다 장르가 다른 방.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="웹 방탈출 · 호실 목록">
+<meta property="og:description" content="링크 하나로 들어가는 방탈출. 101호 「심야 편의점 근무 수칙」 영업 중.">
+<meta property="og:image" content="https://gmlcjf2147.github.io/101/img/og.jpg">
+<meta property="og:url" content="https://gmlcjf2147.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;800&display=swap">
+<style>
+  :root { --ink: #07090f; --card: #10141d; --paper: #f4efe6; --dim: rgba(244, 239, 230, .62); --faint: rgba(244, 239, 230, .38); --accent: #e9b66a; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--ink); color: var(--paper); font-family: "Noto Sans KR", system-ui, sans-serif; }
+  body { min-height: 100vh; padding: max(28px, env(safe-area-inset-top)) 16px max(28px, env(safe-area-inset-bottom)); }
+  main { max-width: 560px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+  header { padding: 8px 4px 2px; }
+  header small { display: block; font-size: 12px; font-weight: 700; letter-spacing: .3em; color: var(--accent); }
+  header h1 { margin-top: 10px; font-family: "Noto Serif KR", serif; font-weight: 800; font-size: 36px; line-height: 1.2; }
+  header p { margin-top: 10px; font-size: 15px; line-height: 1.7; color: var(--dim); word-break: keep-all; }
+  .room { position: relative; display: block; overflow: hidden; border-radius: 18px; background: var(--card); color: inherit; text-decoration: none; }
+  .room .pic { height: 300px; background-size: cover; background-position: 50% 22%; }
+  .room .pic::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(7, 9, 15, 0) 30%, rgba(7, 9, 15, .92) 72%); }
+  .room .txt { position: absolute; left: 0; right: 0; bottom: 0; padding: 20px; z-index: 1; }
+  .no { font-size: 13px; font-weight: 700; letter-spacing: .26em; color: var(--accent); }
+  .room h2 { margin-top: 6px; font-family: "Noto Serif KR", serif; font-weight: 800; font-size: 28px; line-height: 1.25; }
+  .meta { margin-top: 8px; font-size: 13px; color: var(--dim); }
+  .go { display: inline-block; margin-top: 14px; padding: 11px 20px; border-radius: 999px; background: var(--accent); color: #1b1408; font-size: 15px; font-weight: 700; }
+  .soon { padding: 22px 20px; border-radius: 18px; background: var(--card); }
+  .soon h2 { margin-top: 6px; font-size: 18px; font-weight: 700; color: var(--faint); }
+  footer { padding: 4px; font-size: 12px; line-height: 1.7; color: var(--faint); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <small>WEB ESCAPE ROOM</small>
+    <h1>호실 목록</h1>
+    <p>링크 하나로 들어가는 방탈출. 휴대폰 세로 화면, 소리 켜고 하는 걸 추천해요.</p>
+  </header>
+
+  <a class="room" href="./101/">
+    <div class="pic" style="background-image:url(./101/img/02.jpg)"></div>
+    <div class="txt">
+      <span class="no">101호</span>
+      <h2>심야 편의점<br>근무 수칙</h2>
+      <p class="meta">공포 · 규칙 괴담 · 약 20분 · 혼자 · 힌트 없음</p>
+      <span class="go">입장하기</span>
+    </div>
+  </a>
+
+  <div class="soon">
+    <span class="no">102호</span>
+    <h2>준비 중</h2>
+  </div>
+
+  <footer>장면 그림과 영상은 AI로 만들었어요.</footer>
+</main>
+</body>
+</html>
