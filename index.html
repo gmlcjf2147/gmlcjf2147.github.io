@@ -25,7 +25,7 @@
   header h1 { margin-top: 10px; font-family: "Noto Serif KR", serif; font-weight: 800; font-size: 36px; line-height: 1.2; }
   header p { margin-top: 10px; font-size: 15px; line-height: 1.7; color: var(--dim); word-break: keep-all; }
   .room { position: relative; display: block; overflow: hidden; border-radius: 18px; background: var(--card); color: inherit; text-decoration: none; }
-  .room .pic { height: 300px; background-size: cover; background-position: 50% 22%; }
+  .room .pic { height: 300px; background-size: cover; }
   .room .pic::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(7, 9, 15, 0) 30%, rgba(7, 9, 15, .92) 72%); }
   .room .txt { position: absolute; left: 0; right: 0; bottom: 0; padding: 20px; z-index: 1; }
   .no { font-size: 13px; font-weight: 700; letter-spacing: .26em; color: var(--accent); }
@@ -46,7 +46,7 @@
   </header>
 
   <a class="room" href="./101/">
-    <div class="pic" style="background-image:url(./101/img/02.jpg)"></div>
+    <div class="pic" style="background-image:url(./101/img/02.jpg);background-position:50% 22%"></div>
     <div class="txt">
       <span class="no">101호</span>
       <h2>심야 편의점<br>근무 수칙</h2>
